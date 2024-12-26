@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const form = document.getElementById('formReportRepair');
-    form.addEventListener('submit', submitForm);
-
     // ดึง fieldวันที่
     const dateField = document.getElementById('currentDate');
 
