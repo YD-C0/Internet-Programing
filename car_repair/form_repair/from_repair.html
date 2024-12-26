@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_from.css">
+    <script src="./script_form_repair.js"></script>
+    <title>รายละเอียดการแจ้งซ่อม</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="car_report.html">รายงานสภาพรถ</a>
+        <a class="active">แจ้งซ่อม</a>
+        <a href="">จัดการตารางเวลารถพยาบาล</a>
+    </div>
+    <div class="header">
+        <h1 class="title">รายงานสภาพรถ</h1>
+    </div>
+
+    <form action="" class="formReportRepair">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-title">รายละเอียดการแจ้งซ่อม</div>
+    
+                <div class="section">
+                    <div class="form-row1">
+                        <div class="form-group">
+                            <label for="date">วันที่</label>
+                            <input type="date" id="currentDate" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="license">ทะเบียนรถ</label>
+                            <input type="text" id="license" value="กข1234" disabled>
+                        </div>
+                    </div>
+    
+                    <div class="form-row2">
+                        <div class="form-group">
+                            <label for="category">อุปกรณ์ / อะไหล่</label>
+                            <select id="category" required>
+                                <option value="" disabled selected>ระบุประเภท</option>
+                                <option value="option1">เครื่องยนต์</option>
+                                <option value="option2">เครื่องปรับอากาศ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="device">รายละเอียด</label>
+                            <select id="device" required>
+                                <option value="" disabled selected>ระบุอุปกรณ์</option>
+                                <option value="option1">AED</option>
+                                <option value="option2">เตียง</option>
+                                <option value="option3">เครื่องช่วยหายใจ</option>
+                                <option value="option4">เฝือกลม</option>
+                                <option value="option5">ถังออกซิเจน</option>
+                                <option value="option6">อุปกรณ์ปฐมพยาบาล</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">สาเหตุ</label>
+                            <select id="reason" required>
+                                <option value="" disabled selected>สาเหตุ</option>
+                                <option value="option1">ชำรุด</option>
+                                <option value="option2">หมดอายุ</option>
+                                <option value="other">อื่นๆ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="note">หมายเหตุ</label>
+                            <input type="text" id="note">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="button-row">
+                    <button type="submit" class="save-button">บันทึก</button>
+                    <button class="cancel-button">ยกเลิก</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>
